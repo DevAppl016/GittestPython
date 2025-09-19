@@ -25,7 +25,7 @@ jobs:
           pip install pytest coverage
       - name: Run tests
         run: |
-          coverage run --source=mon_projet -m pytest tests/
+          coverage run --source=. -m pytest 
           coverage report
       - name: Generate HTML report
         run: coverage html
