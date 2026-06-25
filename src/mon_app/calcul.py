@@ -53,8 +53,8 @@ def division(a: float, b: float) -> float:
     # NOUVEAU : vérification complète
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError(
-    f"Les opérandes doivent être des nombres, reçu : {type(a)}, {type(b)}"
-)
+    f"Les opérandes doivent être des nombres, reçu : {type(a)}, {type(b)}")
+
     if b == 0:
         raise ZeroDivisionError(f"Impossible de diviser {a} par zéro")
 
