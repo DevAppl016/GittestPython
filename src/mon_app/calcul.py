@@ -52,7 +52,7 @@ def division(a: float, b: float) -> float:
     # ANCIEN : pas de vérification de type
     # NOUVEAU : vérification complète
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
- raise TypeError(
+        raise TypeError(
     f"Les opérandes doivent être des nombres, reçu : {type(a)}, {type(b)}"
  )
 
